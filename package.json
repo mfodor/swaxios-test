@@ -1,0 +1,21 @@
+{
+  "name": "swaxios-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "test",
+    "api": "./node_modules/.bin/swaxios -i ./api.yml -o ./src/api"
+  },
+  "keywords": [
+    "swaxios"
+  ],
+  "author": "mfodor",
+  "license": "MIT",
+  "devDependencies": {
+    "swaxios": "^0.1.4",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
