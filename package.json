@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "test": "test",
-    "api": "./node_modules/.bin/swaxios -i ./api.yml -o ./src/api"
+    "api": "npm run api:swaxios",
+    "api:swaxios": "./node_modules/.bin/swaxios -i ./api.yml -o ./src/api",
+    "api:codegen": "node api-generator.js"
   },
   "keywords": [
     "swaxios"
@@ -16,6 +18,7 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "swagger-axios-codegen": "^0.11.6"
   }
 }
